@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 //using Newtonsoft.Json;
 
+
 class Program
 {
     public class sWaveLog
