@@ -1,0 +1,15 @@
+E:\_work_U1_server\sensorlog\bin\Debug\net7.0\sensorlog.exe
+E:\_work_U1_server\sensorlog\bin\Debug\net7.0\sensorlog.deps.json
+E:\_work_U1_server\sensorlog\bin\Debug\net7.0\sensorlog.runtimeconfig.json
+E:\_work_U1_server\sensorlog\bin\Debug\net7.0\sensorlog.dll
+E:\_work_U1_server\sensorlog\bin\Debug\net7.0\sensorlog.pdb
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.csproj.AssemblyReference.cache
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.GeneratedMSBuildEditorConfig.editorconfig
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.AssemblyInfoInputs.cache
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.AssemblyInfo.cs
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.csproj.CoreCompileInputs.cache
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.dll
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\refint\sensorlog.dll
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.pdb
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\sensorlog.genruntimeconfig.cache
+E:\_work_U1_server\sensorlog\obj\Debug\net7.0\ref\sensorlog.dll
