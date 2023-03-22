@@ -24,8 +24,8 @@ class Program
             get { return this.DateTimeNow.ToString("yyyy-MM-dd HH:mm:ss"); }
         }
 
-        public DateTime DateTimeNow = DateTime.Now;
-        public void SetTimeStamp() { DateTimeNow = DateTime.Now; }
+        public DateTime DateTimeNow = DateTime.UtcNow;
+        public void SetTimeStamp() { DateTimeNow = DateTime.UtcNow; }
 
         public sWaveLog() {
             SetTimeStamp();
@@ -34,7 +34,8 @@ class Program
 
     static void Main(string[] args)
     {
-        var url = "https://search-gssensorlog-6qnhm2sakbyedo6a3tuwn5cq54.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v1/_doc/";
+        //var url = "https://search-gssensorlog-6qnhm2sakbyedo6a3tuwn5cq54.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v1/_doc/";
+        var url = "https://search-sensor-log-aocp5554myzslqxv2u4gthdupq.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v1/_doc/";
         // var data = "{" +
         //     "\"LOT\": \"ES002\"," + 
         //     "\"address\": \"8569206B\"," +
@@ -52,7 +53,7 @@ class Program
         sWaveLog body = new sWaveLog();
         body.LOT = "ES002";
         body.Address = "8569206B";
-        body.Version = "0.01.005";
+        body.Version = "0.01.001";
         body.Test1 = true;
         body.Test2 = true;
         body.Speed = 2.0f;
@@ -69,6 +70,15 @@ class Program
         var request = WebRequest.Create(url); 
         request.Method = "POST";
 
+        var username = "admin";
+        var password = "Rhfvmwhs1!";
+
+        // 인증 정보 생성
+        var authInfo = $"{username}:{password}";
+        var encodedAuthInfo = Convert.ToBase64String(Encoding.Default.GetBytes(authInfo));
+
+        // Request Headers에 Authorization 정보 추가
+        request.Headers.Add("Authorization", $"Basic {encodedAuthInfo}");
 
         request.ContentType = "application/json";
         var requestBody = Encoding.UTF8.GetBytes(json);
