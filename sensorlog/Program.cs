@@ -21,6 +21,7 @@ class Program
         public float TR { get; set; } = 0.0f;
         public float TL { get; set; } = 0.0f;
         public string timestamp { 
+            //get { return this.DateTimeNow.ToString("yyyy-MM-dd HH:mm:ss.fff"); }
             get { return this.DateTimeNow.ToString("yyyy-MM-dd HH:mm:ss"); }
         }
 
@@ -35,7 +36,7 @@ class Program
     static void Main(string[] args)
     {
         //var url = "https://search-gssensorlog-6qnhm2sakbyedo6a3tuwn5cq54.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v1/_doc/";
-        var url = "https://search-sensor-log-aocp5554myzslqxv2u4gthdupq.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v1/_doc/";
+        var url = "https://search-sensor-log-aocp5554myzslqxv2u4gthdupq.ap-northeast-2.es.amazonaws.com/data-sensor-wave-live-v3/_doc/";
         // var data = "{" +
         //     "\"LOT\": \"ES002\"," + 
         //     "\"address\": \"8569206B\"," +
@@ -52,7 +53,7 @@ class Program
 
         sWaveLog body = new sWaveLog();
         body.LOT = "ES002";
-        body.Address = "8569206B";
+        body.Address = "ASDF001";
         body.Version = "0.01.001";
         body.Test1 = true;
         body.Test2 = true;
